@@ -1,0 +1,28 @@
+﻿# YAML 配置文件禁止使用 Tab 来作为缩进符号，请使用空格，否则将会出错
+
+ClientParam:
+    MaxTotalConnections: 1000
+    MaxPerRouterConnections: 1000
+
+    BufferSizeKb: 512
+
+    SocketTimeoutTime: 5000
+    ConnectTimeoutTime: 5000
+
+    # 工作线程数，网络状况不好推荐使用 20 ，网络状况好推荐使用 50 ，自己适当调整
+    Threads: 50
+
+# 在下面的 '' 中填入你的登录 Cookie 信息，共两项，可以在浏览器的调试画面中看到
+# ！请勿将自己的登录信息泄露给他人，否则你的账户可能会被盗用！
+User:
+    BaiduId: ''
+    BaiduUss: ''
+
+Target:
+    # 清扫目标吧名
+    BarName: '狼'
+
+    # 需要清扫的关键字，可以换行使用同样的锁紧和 - 符号添加多个关键字
+    # 请谨慎操作，如果设置错误可能会造成大范围误封
+    BanKeyWords:
+        - '！！请修改为你的关键字！！'
